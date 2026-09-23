@@ -1,0 +1,2 @@
+import { createFileRoute,Link } from "@tanstack/react-router";
+export const Route=createFileRoute("/reset-senha")({component:()=> <main className="min-h-screen grid place-content-center p-8 text-center gap-4"><h1 className="text-2xl font-bold">Acesso pela Blink</h1><p>Recupere ou altere sua senha na tela de login da Blink.</p><Link to="/entrar" className="underline">Voltar para entrar</Link></main>});

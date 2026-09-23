@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "defaults": {
+    "require_auth": true
+  },
+  "modules": {
+    "db": {
+      "require_auth": true,
+      "raw_sql": {
+        "allowed": false
+      },
+      "row_level": {
+        "mode": "none",
+        "owner_field": "user_id"
+      },
+      "tables": {
+        "app_config": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "appointment": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "billing_event_log": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "club_member": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "club_plan": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "company": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "company_user": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "customer": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "financial_entry": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "invoice_simulated": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "plan": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "product": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "professional": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "professional_service": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "sale": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "sale_item": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "service": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "service_category": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "subscription": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "trial_identity": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "user_roles": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "profiles": {
+          "read": "deny",
+          "write": "deny"
+        },
+        "template_owner": {
+          "read": "deny",
+          "write": "deny"
+        }
+      }
+    }
+  }
+}
